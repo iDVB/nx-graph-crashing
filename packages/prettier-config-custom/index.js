@@ -1,0 +1,23 @@
+module.exports = {
+  semi: false,
+  trailingComma: 'all',
+  singleQuote: true,
+  printWidth: 100,
+  tabWidth: 2,
+  importOrder: [
+    '^(assert|buffer|child_process|cluster|console|constants|crypto|dgram|dns|domain|events|fs|http|https|module|net|os|path|punycode|querystring|readline|repl|stream|string_decoder|sys|timers|tls|tty|url|util|vm|zlib|freelist|v8|process|async_hooks|http2|perf_hooks)(/.*|$)',
+    '^react',
+    '^@?\\w',
+    '^(@|@company|@ui|components|utils|config|vendored-lib)(/.*|$)',
+    '^\\u0000',
+    '^\\.\\.(?!/?$)',
+    '^\\.\\./?$',
+    '^\\./(?=.*/)(?!/?$)',
+    '^\\.(?!/?$)',
+    '^\\./?$',
+    '^.+\\.s?css$',
+  ],
+  importOrderSeparation: true,
+  importOrderSortSpecifiers: true,
+  plugins: [require.resolve('@trivago/prettier-plugin-sort-imports')],
+}

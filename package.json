@@ -1,0 +1,28 @@
+{
+  "name": "brandx-mono",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@nrwl/nx-cloud": "latest",
+    "eslint-config-custom": "workspace:*",
+    "nx": "14.7.8",
+    "prettier": "latest",
+    "prettier-config-custom": "workspace:*"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "packageManager": "pnpm@7.11.0",
+  "pnpm": {
+    "overrides": {
+      "nth-check@<2.0.1": ">=2.0.1",
+      "got@<11.8.5": ">=11.8.5",
+      "trim@<0.0.3": ">=0.0.3",
+      "parse-url@<8.1.0": ">=8.1.0",
+      "node-fetch@<2.6.7": ">=2.6.7"
+    }
+  }
+}

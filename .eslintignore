@@ -1,0 +1,12 @@
+node_modules
+dist
+.git
+.docz
+.cache
+public
+package.json
+package-lock.json
+public
+plugin
+!.eslintrc.js
+CHANGELOG.md

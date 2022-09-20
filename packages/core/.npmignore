@@ -1,0 +1,8 @@
+node_modules
+tests
+*.test.js
+yarn.lock
+yarn-error.log
+.travis.yml
+.build
+
